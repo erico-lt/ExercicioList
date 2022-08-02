@@ -71,7 +71,7 @@ public class Registro {
         }
         return -1;
     }
-    public static Integer verificadorDeId (List<Funcionario> list, int id){
+    public static Funcionario verificadorDeId (List<Funcionario> list, int id){
       Funcionario func = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
       if (func != null){
           return func;
